@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "biobricks": "https://biobricks.ai/ns#"
+  },
+  "@type": "dcat:Dataset",
+  "@id": "https://biobricks.ai/bricks/drugbank-open",
+  "dcterms:title": "drugbank-open",
+  "dcterms:description": "The openly-licensed DrugBank Open Data drug vocabulary: DrugBank accession, common name, CAS, UNII, and synonyms for approved/experimental drugs. This brick uses ONLY the CC0-licensed open subset (drug vocabulary), NOT the license-restricted full DrugBank XML.",
+  "dcterms:publisher": "DrugBank / OMx Personal Health Analytics",
+  "dcterms:license": "Creative Commons CC0 1.0 Universal (public domain dedication) for the DrugBank Open Data vocabulary subset. Commercial use permitted. NOTE: the full DrugBank database is separately license-restricted and is NOT included in this brick.",
+  "dcterms:source": "https://go.drugbank.com/releases/latest#open-data",
+  "dcterms:hasVersion": "5.1.12",
+  "biobricks:merckCommercialUse": "commercial-OK",
+  "biobricks:reviewed": false,
+  "biobricks:reviewNotes": "source.jsonld back-filled 2026-07-15 (was missing). Open-data vocabulary subset = CC0. Version pinned at 5.1.12: as of 2026-07-15 DrugBank has DISABLED academic/open downloads site-wide (both 5.1.12 and 5.1.13 URLs return 'Academic downloads are currently disabled'), so a version bump is not currently possible. Revisit if downloads are re-enabled.",
+  "prov:wasDerivedFrom": {
+    "@type": "dcat:Dataset",
+    "@id": "https://go.drugbank.com/releases/5-1-12/downloads/all-drugbank-vocabulary",
+    "dcterms:title": "DrugBank Open Data drug vocabulary 5.1.12",
+    "dcat:downloadURL": "https://go.drugbank.com/releases/5-1-12/downloads/all-drugbank-vocabulary"
+  }
+}
